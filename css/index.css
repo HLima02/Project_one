@@ -39,13 +39,22 @@ a{
 }
 
 
+
 /* ———————————— Cabeçalho ———————————— */
 header{
 	color: #fff;
 	padding: 10px 20px;
 	position: absolute;
 	z-index: 5;
-	width: 95%;
+	width: 100%;
+	box-sizing: border-box;
+	min-width: 350px;
+}
+
+#title-logo:hover{
+	text-shadow: 0 0 10px #fff;
+	transform: scale(1.2);
+	transition: 1.1s;
 }
 
 #cabecalho{
@@ -81,6 +90,11 @@ header{
 	display: none;
 }
 
+.bordas_li{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+}
+
 #fechar-nav{
 	float: right;
 	top: 0;
@@ -111,6 +125,10 @@ header{
 	margin: 0 20px;
 }
 
+#nav-menu a{
+	color: #fff;
+}
+
  #nav-menu li{
  	margin: 10px 20px;
  }
@@ -132,6 +150,7 @@ header{
 	opacity: 0.7;
 	width: 100%;
 	height: 100%;
+	animation: bannerBg 4s;
 }
 
 #secao01{
@@ -139,7 +158,8 @@ header{
 	color: #fff;
 	padding: 120px 10px;
 	position: relative;
-	z-index: 2
+	z-index: 3;
+	animation: banner 6s;
 }
 
 #secao01_title{
@@ -152,7 +172,17 @@ header{
 	padding: 40px 20px;
 }
 
+@keyframes banner{
+	0%{opacity: 0}
+	40%{opacity: 0}
+	100%{opacity: 100}
+}
 
+@keyframes bannerBg{
+	0%{opacity: 1}
+	30%{opacity: 1}
+	100%{opacity: 0.7}
+}
 
 
 
@@ -295,6 +325,7 @@ header{
 #footertxt{
 	padding-right: 10px;
 	width: 40%;
+	box-sizing: border-box;
 }
 
 #footertxt h4, #footerli h4, #redes_sociais h4{
@@ -311,6 +342,8 @@ header{
 
 #footerli, #redes_sociais{
 	padding: 0 20px;
+	width: 30%;
+	box-sizing: border-box;
 }
 
 #footerli li{
@@ -350,17 +383,57 @@ hr{
 	color: #7D7D7D;
 }
 
+.flex_rodape{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
 
 
-
- /*media Query
- @media only screen and (max-width: 700px){
- 	#botao-menu{
- 		display: block;
+/* ————————————————————————  media Query ————————————————————————  */
+ @media only screen and (max-width: 720px){
+ 	#secao02, #secao03, #secao04{
+ 		padding: 60px 10px;
+ 	}
+ 	.display_flex{
+ 		flex-direction: column;
  	}
 
- 	#nav-menu{
- 		display: none;
+ 	#secao02_img, #secao02_txt, #secao03_txt, #secao03_img{
+ 		width: 100%;
  	}
- }*/
+
+ 	 #secao02_txt{
+ 	 	padding: 0;
+ 	 }
+
+ 	.flex_parent{
+ 		display: flex;
+ 		justify-content: space-around;
+ 		margin: 30px 0;
+ 	}
+
+ 	.s04_width{
+ 		width: 100%;
+ 	}
+
+ 	#footertxt{
+ 		width: 100%;
+ 	}
+
+ 	#footerli, #redes_sociais{
+ 		width: 50%;
+ 	}
+ }
+
+ @media only screen and (max-width: 520px){
+ 	#footerli, #redes_sociais{
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+
+ 	#footerli{
+ 		margin-bottom: 30px;
+ 	}
+ }

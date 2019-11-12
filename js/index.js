@@ -11,3 +11,10 @@ $(function(){
 		$('#nav-menu').fadeOut();
 	})
 })
+
+// Fnção para elemetos scrool
+$(function(){
+	AOS.init({
+		disable: window.innerWidth < 600
+	});
+})

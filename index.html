@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -29,10 +30,17 @@
 							<div id="bar-02"></div>
 						</div>
 						<ul>
-							<li>Fusce</li>
-							<li>Fictum</li>
-							<li>Hendrerit</li>
-							<li>Donec</li>
+							<li class="bordas_li">
+								<a href="">Fusce</a>
+							</li>
+							<li class="bordas_li">
+								<a href="">Fictum</a>
+							</li>
+							<li class="bordas_li">
+								<a href="">Hendrerit</a></li>
+							<li>
+								<a href="">Donec</a>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -57,13 +65,13 @@
 
 		<section id="secao02">
 			<div class="container display_flex" id="s02">
-				<div id="secao02_img">
-					<div class="parent_img">
+				<div id="secao02_img" data-aos="fade-right">
+					<div class="parent_img flex_parent">
 						<img src="images/img_01.jpg">
 					</div>
 				</div>
 
-				<div id="secao02_txt">
+				<div id="secao02_txt" data-aos="fade-left">
 					<div id="title02">
 						<h3>Suspendisse rutrum mauris ligula</h3>
 					</div>
@@ -79,7 +87,7 @@
 
 		<section id="secao03">
 			<div class="container display_flex">
-				<div id="secao03_txt">
+				<div id="secao03_txt" data-aos="fade-right">
 					<div id="title03">
 						<h3>Fusce nunc diam, eleifend pharetra</h3>
 					</div>
@@ -93,8 +101,8 @@
 					</div>
 				</div>
 
-				<div id="secao03_img">
-					<div class="parent_img">
+				<div id="secao03_img" data-aos="fade-left">
+					<div class="parent_img flex_parent">
 						<img src="images/img_02.jpg">
 					</div>
 				</div>
@@ -102,7 +110,7 @@
 		</section>
 
 		<section id="secao04">
-			<div id="sec04_title">
+			<div id="sec04_title" data-aos="zoom-in-up">
 				<div>
 					<h3>Curabitur consectetur consectetur massa</h3>
 				</div>
@@ -113,55 +121,55 @@
 			</div>
 			<div class="container display_flex" id="s04">
 				<div class="s04_width" id="">
-					<div class="parent_img">
+					<div class="parent_img" data-aos="zoom-in-right">
 						<div >
 							<img class="secao04_img" src="images/img_03.jpg">
 						</div>
 					</div>
 
-					<div class="txt04">
+					<div class="txt04" data-aos="zoom-in-right">
 						<p>
 							Nam faucibus, elit a eleifend elementum, quam dui pulvinar urna, sed tincidunt leo lorem vel urna. Praesent efficitur, mauris sit amet euismod varius, nulla eros feugiat eros.
 						</p>
 					</div>
 
-					<div>
+					<div data-aos="zoom-in">
 						<input class="botao_input" type="submit" name="cta01" value="Learn More">
 					</div>
 				</div>
 
 				<div class="s04_width">
-					<div class="parent_img">
+					<div class="parent_img" data-aos="zoom-in">
 						<div >
 							<img class="secao04_img" src="images/img_04.jpg">
 						</div>
 					</div>
 
-					<div class="txt04">
+					<div class="txt04" data-aos="zoom-in">
 						<p>
 							Integer ullamcorper turpis at mauris tristique elementum. Curabitur consectetur consectetur massa, a euismod dolor viverra ut. Nunc ut tellus lacus. Mauris sed mollis augue, non condimentum ex
 						</p>
 					</div>
 
-					<div>
+					<div data-aos="zoom-in">
 						<input class="botao_input" type="submit" name="cta01" value="Learn More">
 					</div>
 				</div>
 
 				<div class="s04_width">
 					<div class="parent_img">
-						<div >
+						<div data-aos="zoom-in-left">
 							<img class="secao04_img" src="images/img_05.jpg">
 						</div>
 					</div>
 
-					<div class="txt04">
+					<div class="txt04" data-aos="zoom-in-left">
 						<p>
 							Duis lobortis vulputate eros, ac rhoncus ex interdum ut. Curabitur rutrum condimentum eleifend. Sed dictum ipsum vitae leo dapibus eleifend. Sed molestie justo ullamcorper nunc tempor fermentum
 						</p>
 					</div>
 
-					<div>
+					<div data-aos="zoom-in">
 						<input class="botao_input" type="submit" name="cta01" value="Learn More">
 					</div>
 				</div>
@@ -170,7 +178,7 @@
 
 		<footer id="rodape">
 			<div class="container">
-				<div class="display_flex ">
+				<div class="flex_rodape">
 					<div id="footertxt">
 						<div>
 							<h4>Orci varius natoque penatibus</h4>
@@ -233,5 +241,6 @@
 
 		<script src="js/jquery.js"></script>
 		<script src="js/index.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</body>
 </html>
